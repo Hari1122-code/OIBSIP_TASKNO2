@@ -1,0 +1,179 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    color: #2A2438;
+    height: inherit;
+    font-weight: 540;
+    text-align: center;
+    font-family: sans-serif;
+}
+.navbar{
+    background-color: #2A2438;
+    margin: 2% 10%;
+    border-radius: 10px;
+    height: 100px;
+    padding: 15px;
+}
+.navbar h1{
+    color: white;
+    font-size: 60px;
+    margin: auto;
+}
+.info{
+    margin: 2% 10%;
+    text-align: left;
+}
+.img1{
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.6);
+}
+.info_data{
+    height: 50%;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.business{
+    margin: 2% 10%;
+    padding: 0 20px;
+    text-align: left;
+    line-height: 2;
+    color: #DBD8E3;
+    background-color: #5C5470;
+    border-radius: 10px;
+}
+.activities{
+    margin: 2% 10%;
+    text-align: left;
+    line-height: 2;
+}
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 35px;
+}
+p{
+    font-size: 25px;
+    line-height: 1.5;
+}
+.slider_spacex,.slider_neuralink,.slider_hyperloop,.slider_openAI{
+    float: right;
+    margin-left: 30px;
+}
+.slider_tesla,.slider_boring,.slider_solar{
+    float: left;
+    margin-right: 30px;
+}
+.slide{
+    width: 35% !important;
+}
+.slider,.slide{
+    width: 40%;
+    display: flex;
+    aspect-ratio: 15/10;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+}
+.footer{
+    height: 100px;
+    background-color: #2A2438;
+    margin: 0 9%;
+    border-radius: 10px;
+}
+
+@media(max-width:900px){
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img1{
+        width: auto;
+        margin: auto;
+        /* height: 300px; */
+        float: none;
+    }
+    .slider_spacex,.slider_neuralink,.slider_hyperloop,.slider_openAI,.slider_tesla,.slider_boring,.slider_solar{
+        float: none;
+        margin: auto;
+    }
+    .slide{
+        width: 90% !important;
+    }
+    .slider,.slide{
+        width: 90%;
+    }
+    .footer{
+        height: 50px;
+    }
+    .img1{
+        height: 300px;
+    }
+    .navbar{
+        margin: 3% 10%;
+        height: 80px;
+    }
+    .navbar h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    .info,.business,.activities{
+        margin: 0 5%;
+    }
+    .navbar{
+        margin: 2% 5%;
+    }
+}
+
+@media(max-width:500px){
+    .img1{
+        height: 250px;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .navbar h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .info,.business,.activities{
+        margin: 0 5%;
+    }
+    .navbar{
+        margin: 2% 5%;
+    }
+}
